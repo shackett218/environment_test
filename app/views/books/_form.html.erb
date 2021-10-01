@@ -16,6 +16,22 @@
     <%= form.text_field :title %>
   </div>
 
+  <div class="field">
+    <%= form.label :author %>
+    <%= form.text_field :author %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="dropdown">
+    <%= form.label :date %>
+    
+    <%= form.select :date, [['Jan 1, 1997',Date.new(1997,1,1)],['Feb 18, 1998',Date.new(1998,2,18)]] %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
